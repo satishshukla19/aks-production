@@ -24,7 +24,7 @@ steps:
      backendServiceArm: 'sep-serviceconection'
      backendAzureRmStorageAccountName: 'nahid0562'
      backendAzureRmContainerName: 'adostatefiles'
-     backendAzureRmKey: 'aks.infra.tfstate'
+     backendAzureRmKey: 'landing-zone.infra.tfstate'
   
 
  - task: TerraformTask@5
