@@ -22,6 +22,7 @@ steps:
      command: 'init'
      workingDirectory: '$(System.DefaultWorkingDirectory)/provider.tf'
      backendServiceArm: 'sep-serviceconection'
+     backendAzureRmResourceGroupName: 'Ali-test'
      backendAzureRmStorageAccountName: 'nahid0562'
      backendAzureRmContainerName: 'adostatefiles'
      backendAzureRmKey: 'landing-zone.infra.tfstate'
