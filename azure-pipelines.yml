@@ -14,6 +14,19 @@ steps:
      outputTo: 'console'
      customCommand: 'fmt'
      environmentServiceNameAzureRM: 'sep-serviceconection'
+
+ - task: TerraformTask@5
+   displayName: terraform init
+   inputs:
+     provider: 'azurerm'
+     command: 'init'
+     workingDirectory: '$(System.DefaultWorkingDirectory)/provider.tf'
+     backendServiceArm: 'sep-serviceconection'
+     backendAzureRmStorageAccountName: 'nahid0562'
+     backendAzureRmContainerName: 'adostatefiles'
+     backendAzureRmKey: 'aks.infra.tfstate'
+  
+
  - task: TerraformTask@5
    displayName: terraform validate
    inputs:
