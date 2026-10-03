@@ -20,7 +20,6 @@ steps:
    inputs:
      provider: 'azurerm'
      command: 'init'
-     workingDirectory: '$(System.DefaultWorkingDirectory)/provider.tf'
      backendServiceArm: 'sep-serviceconection'
      backendAzureRmResourceGroupName: 'Ali-test'
      backendAzureRmStorageAccountName: 'nahid0562'
