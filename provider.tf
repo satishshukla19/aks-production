@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 4.0"
+      version = "=5.0.0"
     }
   }
   backend "azurerm" {
@@ -11,8 +11,6 @@ terraform {
     container_name       = "adostatefiles"
     key                  = "landing-zone.infra.tfstate"
   }
-
-  required_version = ">= 1.5.0"
 }
 
 provider "azurerm" {
